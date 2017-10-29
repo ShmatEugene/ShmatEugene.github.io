@@ -65,6 +65,7 @@ $(document).ready(function(){
   });
 });
 
+
 $(document).ready(function(){
   $("#owl-2").owlCarousel({
       items: 1,
@@ -89,16 +90,22 @@ $(document).ready(function(){
   });
 });
 
-var owl = $('.owl-carousel');
-owl.on('mousewheel', '.owl-stage', function(e) {
-   if (e.deltaY > 0) {
-      owl.trigger('next.owl');
-   } else {
-      owl.trigger('prev.owl');
-   }
-   e.preventDefault();
-});
 
+
+
+
+var owl = $('.owl-carousel');
+
+    owl.on('mousewheel', '.owl-stage',  function(e) {
+       if (e.deltaY > 0) {
+           
+            owl.trigger('next.owl');
+            
+       } else {
+            owl.trigger('prev.owl');
+       }
+       e.preventDefault();
+    });
 
 
 
