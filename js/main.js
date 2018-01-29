@@ -107,6 +107,13 @@ var owl = $('.owl-carousel');
        e.preventDefault();
     });
 
-
-
+$(window).keyup(function(event) {
+    if (event.keyCode == 37) {
+       // go left
+       owl.trigger('prev.owl');
+    } else if (event.keyCode == 39) {
+       // go right
+       owl.trigger('next.owl');
+    }
+});
 
