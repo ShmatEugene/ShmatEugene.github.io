@@ -1,0 +1,706 @@
+$grey: #4F5464
+$dark: darken(#1A272F, 5%)
+$blue: #4D5BED
+$white: #EFEFF0
+$lightGrey: #C2C2C2
+$largeBorderR: 80px
+$smallBorderR: 40px
+
+
+
+@media (max-width: 810px)
+
+  h1
+    font-size: 1.9rem
+    line-height: 1em
+  h2
+    font-size: 1.725rem
+    letter-spacing: 0.2px
+  h3
+    font-size: 1.3rem
+    letter-spacing: 0.2px
+
+
+  .header
+    nav
+      margin-left: -15px
+      margin-right: -15px
+      background: $dark
+      width: 100%
+      position: absolute
+  .header-nav
+    position: relative
+    display: block
+    height: auto
+    position: relative
+    padding-top: 15px
+    padding-bottom: 15px
+    &-logo
+      img
+        height: 50px
+    &-humburger
+      position: absolute
+      top: 12.5px
+      right: 10px
+      color: $white
+      &.d-none
+        display: block
+      span.hamburger-inner
+        background-color: $white
+        border-radius: 0
+      span:before, span::after
+        background-color: $white !important
+        border-radius: 0
+    &-list
+      height: 0px
+      ul
+        visibility: hidden
+        display: block
+        opacity: 0
+    &-call-us
+      height: 0px
+      div
+        visibility: hidden
+        display: inline-block
+        opacity: 0
+      &-number
+        margin-right: 20px
+    &.active
+      & .header-nav-list
+        display: block
+        height: 160px
+        ul
+          visibility: visible
+          opacity: 1
+          li
+            line-height: 2
+            &:first-child
+              margin-top: 20px
+            a
+              &:hover
+                left: 0px
+              &::after
+                padding-top: 3px
+      & .header-nav-call-us
+        flex-direction: row
+        justify-content: space-between
+        padding: 30px 0
+        display: block
+        height: 21.6px
+        div
+          display: inline-block
+          visibility: visible
+          opacity: 1
+
+/*--------------------------------- <1500 -----------------------------------*/
+
+@media (max-width: 1500px)
+  .home-catalog-content
+    padding-right: 15px
+  .home-catalog-search select, .home-catalog-search input, .home-catalog-search button
+    width: 90%
+
+/*--------------------------------- <1200 -----------------------------------*/
+@media (max-width: 1200px)
+  .container
+    width: 1170px
+  .home-catalog-content-block
+    width: 60%
+  .home-catalog-img-block
+    width: 40%
+  .home-catalog-content
+    p
+      padding-right: 70px
+
+  .home-testimonials-slider-card
+    h3
+      font-size: 1.3em
+
+/*--------------------------------- 992 - 1200 -----------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1200px)
+  .container
+    width: 960px
+
+
+
+  .sh-contacts-block-insert
+    padding: 50px
+  .sh-contacts-block-insert-top-name-phone
+    margin-right: 0
+  .sh-contacts-block-insert-top
+    flex-direction: column
+    & > *
+      flex-basis: 100%
+      width: 100%
+      input
+        width: 100%
+  .sh-contacts-block-data
+    padding: 50px
+
+/*--------------------------------- 768 - 992 -----------------------------------*/
+
+@media (min-width: 768px) and (max-width: 992px)
+  .container
+    width: 738px
+  .header-nav-list
+    ul
+      li
+        a
+          font-size: 0.8rem
+          margin-right: 20px
+          &:after
+            padding-top: 4px
+  .header-nav-call-us
+    font-size: 0.8rem
+    &-number
+      text-align: right
+  .header-nav-logo img
+    height: 50px
+
+  .header
+    height: auto
+    &-content
+      padding: 170px 0 100px 0
+
+
+
+  .home-about-us-img
+    width: 50%
+    &-block
+      border-right: 30px solid #fff
+      border-bottom: 30px solid #fff
+      border-radius: 40px
+
+
+
+  .home-catalog-content-block
+    width: 70%
+  .home-catalog-img-block
+    width: 30%
+  .home-catalog-content
+    padding: 40px
+    padding-top: 100px
+    padding-bottom: 100px
+    p
+      padding-right: 50px
+    .home-catalog-search select, .home-catalog-search input
+      font-size: 0.8rem
+
+  .advantages-list
+    flex-wrap: wrap
+    &-card
+      flex-basis: 100%
+      margin-right: 0
+
+  .home-call-content
+    padding: 110px 0%
+
+
+  footer .header-nav-list
+    height: auto
+    ul
+      flex-direction: column
+      visibility: visible
+      opacity: 1
+
+
+  .sh-about-company-img
+    width: 40%
+
+
+
+  .sh-about-logistics
+    width: 60%
+    padding-bottom: 100px
+  .sh-about .logistics-section-bg-block
+    height: auto
+
+
+
+  .sh-about-legal, .sh-about-legal p
+    font-size: 0.7rem
+
+
+
+  .sh-catalog
+    &-header-search
+      width: 740px
+  .sh-catalog-header-search-data input, .sh-catalog-header-search-data select
+    padding: 0px 5px
+
+
+
+  .sh-scroll
+    overflow-x: auto
+    .sh-catalog-table
+      width: 900px
+
+
+
+  .sh-partners-list
+    flex-direction: column
+    & > *
+      flex-basis: 100%
+      width: 100%
+
+  .sh-partners .header-content
+    padding: 0
+
+
+
+
+
+
+  .sh-contacts-block-insert
+    padding: 50px
+  .sh-contacts-block-insert-top-name-phone
+    margin-right: 0
+  .sh-contacts-block-insert-top
+    flex-direction: column
+    & > *
+      flex-basis: 100%
+      width: 100%
+      input
+        width: 100%
+  .sh-contacts-block-data
+    padding: 50px
+/*--------------------------------- 576 - 768 -----------------------------------*/
+
+@media (min-width: 576px) and (max-width: 768px)
+  .container
+    width: 540px
+
+  .header
+    height: auto
+    &-content
+      padding: 170px 0 100px 0
+
+
+  .home-about-us
+    flex-wrap: wrap
+    &-img
+      width: 100%
+      &-block
+        border: 0
+    &-content
+      width: 100%
+      margin-top: 40px
+      &-box
+        &::before
+          width: 100%
+          margin-left: 0
+        & p, & .main-btn-block
+          padding: 0 70px
+        p
+          padding-top: 70px
+
+
+  .home-catalog-content-block
+    width: 70%
+  .home-catalog-img-block
+    width: 30%
+  .home-catalog-content
+    padding: 40px
+    padding-top: 100px
+    padding-bottom: 100px
+    p
+      padding-right: 50px
+    .home-catalog-search select, .home-catalog-search input
+    .home-catalog-search
+      flex-wrap: wrap
+      & > *
+        width: 100%
+
+  .advantages-list
+    flex-wrap: wrap
+    &-card
+      flex-basis: 100%
+      margin-right: 0
+
+
+  .home-call-content
+    padding: 110px 0%
+    &-request
+      flex-direction: column
+      align-items: center
+    &-btn
+      margin-top: 30px
+
+
+  footer .header-nav-list
+    height: auto
+    ul
+      flex-direction: column
+      visibility: visible
+      opacity: 1
+
+
+
+  .sh-about-company
+    flex-wrap: wrap
+    & > *
+      flex-basis: 100%
+      width: 100%
+    &-text
+      margin-top: 30px
+
+
+
+  .sh-about-logistics
+    width: 60%
+    padding-bottom: 100px
+  .sh-about .logistics-section-bg-block
+    height: auto
+
+
+
+  .sh-about-legal
+    flex-direction: column
+    justify-content: center
+    &-sertificate
+      img
+        width: 100%
+    &-requisites
+      margin-top: 30px
+    &-contacts
+      margin-top: 30px
+
+
+
+
+  .sh-about-tesla-block p
+    width: 80%
+
+
+
+
+  .sh-catalog
+    &-header-search
+      &-data
+        padding-right: 10px
+        & span.flaticon-arrow-1
+          display: none
+      width: 540px
+  .sh-catalog-header-search-data input, .sh-catalog-header-search-data select
+    padding: 0px 5px
+    font-size: 0.75rem
+
+
+
+  .sh-scroll
+    overflow-x: auto
+    .sh-catalog-table
+      width: 900px
+
+
+
+  .sh-partners-list
+    flex-direction: column
+    & > *
+      flex-basis: 100%
+      width: 100%
+
+
+
+  .sh-contacts-block-insert
+    padding: 50px
+  .sh-contacts-block-insert-top-name-phone
+    margin-right: 0
+  .sh-contacts-block-insert-top
+    flex-direction: column
+    & > *
+      flex-basis: 100%
+      width: 100%
+      input
+        width: 100%
+  .sh-contacts-block-data
+    padding: 50px
+
+  .sh-contacts-block
+    flex-direction: column
+    & > div:first-child
+      border-radius: 0
+      border-top-right-radius: 80px
+      border-top-left-radius: 80px
+    & > div:last-child
+      border-radius: 0
+      border-bottom-right-radius: 80px
+      border-bottom-left-radius: 80px
+    & > div
+      width: 100%
+      flex-basis: 100%
+      box-sizing: border-box
+/*--------------------------------- < 576 -----------------------------------*/
+
+@media (max-width: 576px)
+  .container
+    width: auto
+
+  .header
+    height: auto
+    &-content
+      padding: 170px 0 100px 0
+
+
+  .home-about-us
+    flex-wrap: wrap
+    &-img
+      width: 100%
+      &-block
+        border: 0
+    &-content
+      width: 100%
+      margin-top: 30px
+      &-box
+        top: 20px
+        &::before
+          width: 100%
+          margin-left: 0
+        & p, & .main-btn-block
+          padding: 0 50px
+        p
+          padding-top: 50px
+
+  .home-catalog-content-block
+    width: 100%
+  .home-catalog-img-block
+    width: 0%
+  .home-catalog-content
+    padding: 40px
+    p
+      padding-right: 0px
+    .home-catalog-search select, .home-catalog-search input
+    .home-catalog-search
+      flex-wrap: wrap
+      & > *
+        width: 100%
+    .home-catalog-search select, .home-catalog-search input, .home-catalog-search button
+      width: 90%
+      margin-left: 5%
+    .home-catalog-search select, .home-catalog-search input
+      font-size: 0.8rem
+
+
+  .advantages-list
+    flex-wrap: wrap
+    &-card
+      flex-basis: 100%
+      margin-right: 0
+      padding: 40px 20px
+
+
+
+  .home-call-content
+    padding: 110px 0%
+    &-request
+      flex-direction: column
+      align-items: center
+      &-leave-data div.d-flex
+        flex-direction: column
+        justify-content: center
+      .home-call-content-request-leave-data input
+        margin-right: 0
+  .home-call-content h2
+    margin-right: 0
+    text-align: center
+    &-btn
+      margin-top: 30px
+
+
+
+  .home-testimonials-slider-card
+    padding: 30px 15px
+    h3
+      font-size: 1.3em
+
+  footer
+    .footer-content
+      flex-wrap: wrap
+      justify-content: center
+      & > *
+        flex-basis: 100%
+      nav
+        margin-top: 30px
+    .header-nav-list
+      height: auto
+      ul
+        flex-direction: column
+        visibility: visible
+        opacity: 1
+
+    .footer-bottom
+      flex-wrap: wrap
+      flex-direction: row-reverse
+      & > *
+        flex-basis: 100%
+
+
+
+  .sh-about-company
+    flex-wrap: wrap
+    & > *
+      flex-basis: 100%
+      width: 100%
+    &-text
+      margin-top: 30px
+
+
+
+  .sh-about-logistics
+    width: 100%
+    padding: 50px 15px
+    box-sizing: border-box
+  .sh-about .logistics-section-bg-block
+    height: auto
+  .sh-about .logistics-section-bg
+    background: none
+
+
+
+  .sh-about-legal
+    flex-direction: column
+    justify-content: center
+    &-sertificate
+      img
+        width: 100%
+    &-requisites
+      margin-top: 30px
+    &-contacts
+      margin-top: 30px
+
+
+
+  .sh-about-tesla-block p
+    width: 100%
+  .sh-about-tesla-block .main-btn-block a
+    padding: 15px 30px
+
+
+  .sh-catalog
+    &-header-search
+      height: auto
+      padding: 0
+      padding-top: 20px
+      border-radius: 25px
+      button
+        width: 100%
+      &-data
+        padding-right: 10px
+        & span.flaticon-arrow-1
+          display: none
+      width: 100%
+  .sh-catalog-header-search-data input, .sh-catalog-header-search-data select
+    padding: 0px 5px
+    text-align-last: center
+    width: 80%
+    font-size: 1rem
+    border-right: none
+  .sh-catalog-header-search-data select
+    margin-top: 30px
+  .sh-catalog-header-search-data-select-no-border
+    margin-bottom: 30px
+  .sh-catalog-header-search form
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+  .sh-catalog-header-search-data
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+
+
+
+  .sh-scroll
+    overflow-x: auto
+    .sh-catalog-table
+      width: 900px
+  .sh-catalog-pagination-block-item
+    margin-right: 10px
+    width: 2rem
+    height: 2rem
+    font-size: 1rem
+
+
+
+  .sh-partners-list
+    flex-direction: column
+    & > *
+      flex-basis: 100%
+      width: 100%
+  .sh-partners-list-item-extending-hidden-text
+    padding: 0 0px
+  .sh-partners-list-item-top
+    flex-direction: column
+    align-items: flex-start
+    h3
+      margin-top: 15px
+  .sh-partners-list-item
+    padding: 40px 20px
+    & > p
+      display: none
+    .sh-partners-list-item-extending
+      position: relative
+      &-line
+        display: none
+      &-hidden-text
+        display: block
+        position: relative
+        opacity: 1
+  .sh-partners-list-item-top-logo
+    width: auto
+    & img
+        width: auto
+  .sh-partners-list-item-top
+    margin-bottom: 15px
+
+
+
+
+
+  .sh-contacts-block-insert
+    padding: 30px
+    padding-top: 50px
+    padding-bottom: 50px
+  .sh-contacts-block-insert-top-name-phone
+    margin-right: 0
+  .sh-contacts-block-insert-top
+    flex-direction: column
+    & > *
+      flex-basis: 100%
+      width: 100%
+      input
+        width: 100%
+  .sh-contacts-block-data
+    padding: 30px
+    padding-top: 50px
+    padding-bottom: 50px
+
+  .sh-contacts-block
+    flex-direction: column
+    & > div:first-child
+      border-radius: 0
+      border-top-right-radius: 40px
+      border-top-left-radius: 40px
+    & > div:last-child
+      border-radius: 0
+      border-bottom-right-radius: 40px
+      border-bottom-left-radius: 40px
+    & > div
+      width: 100%
+      flex-basis: 100%
+      box-sizing: border-box
+  .sh-contacts-section > .container
+    padding: 0
+
+
+@media (max-width: 360px)
+  .home-about-us
+    &-content
+      &-box
+        &::before
+          border: 10px
+        & p, & .main-btn-block
+          padding: 0 0px
+        p
+          padding-top: 0px

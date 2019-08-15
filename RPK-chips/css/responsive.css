@@ -1,0 +1,552 @@
+@media (max-width: 810px) {
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1em; }
+  h2 {
+    font-size: 1.725rem;
+    letter-spacing: 0.2px; }
+  h3 {
+    font-size: 1.3rem;
+    letter-spacing: 0.2px; }
+  .header nav {
+    margin-left: -15px;
+    margin-right: -15px;
+    background: #11191f;
+    width: 100%;
+    position: absolute; }
+  .header-nav {
+    position: relative;
+    display: block;
+    height: auto;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .header-nav-logo img {
+      height: 50px; }
+    .header-nav-humburger {
+      position: absolute;
+      top: 12.5px;
+      right: 10px;
+      color: #EFEFF0; }
+      .header-nav-humburger.d-none {
+        display: block; }
+      .header-nav-humburger span.hamburger-inner {
+        background-color: #EFEFF0;
+        border-radius: 0; }
+      .header-nav-humburger span:before, .header-nav-humburger span::after {
+        background-color: #EFEFF0 !important;
+        border-radius: 0; }
+    .header-nav-list {
+      height: 0px; }
+      .header-nav-list ul {
+        visibility: hidden;
+        display: block;
+        opacity: 0; }
+    .header-nav-call-us {
+      height: 0px; }
+      .header-nav-call-us div {
+        visibility: hidden;
+        display: inline-block;
+        opacity: 0; }
+      .header-nav-call-us-number {
+        margin-right: 20px; }
+    .header-nav.active .header-nav-list {
+      display: block;
+      height: 160px; }
+      .header-nav.active .header-nav-list ul {
+        visibility: visible;
+        opacity: 1; }
+        .header-nav.active .header-nav-list ul li {
+          line-height: 2; }
+          .header-nav.active .header-nav-list ul li:first-child {
+            margin-top: 20px; }
+          .header-nav.active .header-nav-list ul li a:hover {
+            left: 0px; }
+          .header-nav.active .header-nav-list ul li a::after {
+            padding-top: 3px; }
+    .header-nav.active .header-nav-call-us {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 30px 0;
+      display: block;
+      height: 21.6px; }
+      .header-nav.active .header-nav-call-us div {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1; } }
+
+/*--------------------------------- <1500 -----------------------------------*/
+@media (max-width: 1500px) {
+  .home-catalog-content {
+    padding-right: 15px; }
+  .home-catalog-search select, .home-catalog-search input, .home-catalog-search button {
+    width: 90%; } }
+
+/*--------------------------------- <1200 -----------------------------------*/
+@media (max-width: 1200px) {
+  .container {
+    width: 1170px; }
+  .home-catalog-content-block {
+    width: 60%; }
+  .home-catalog-img-block {
+    width: 40%; }
+  .home-catalog-content p {
+    padding-right: 70px; }
+  .home-testimonials-slider-card h3 {
+    font-size: 1.3em; } }
+
+/*--------------------------------- 992 - 1200 -----------------------------------*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 960px; }
+  .sh-contacts-block-insert {
+    padding: 50px; }
+  .sh-contacts-block-insert-top-name-phone {
+    margin-right: 0; }
+  .sh-contacts-block-insert-top {
+    flex-direction: column; }
+    .sh-contacts-block-insert-top > * {
+      flex-basis: 100%;
+      width: 100%; }
+      .sh-contacts-block-insert-top > * input {
+        width: 100%; }
+  .sh-contacts-block-data {
+    padding: 50px; } }
+
+/*--------------------------------- 768 - 992 -----------------------------------*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 738px; }
+  .header-nav-list ul li a {
+    font-size: 0.8rem;
+    margin-right: 20px; }
+    .header-nav-list ul li a:after {
+      padding-top: 4px; }
+  .header-nav-call-us {
+    font-size: 0.8rem; }
+    .header-nav-call-us-number {
+      text-align: right; }
+  .header-nav-logo img {
+    height: 50px; }
+  .header {
+    height: auto; }
+    .header-content {
+      padding: 170px 0 100px 0; }
+  .home-about-us-img {
+    width: 50%; }
+    .home-about-us-img-block {
+      border-right: 30px solid #fff;
+      border-bottom: 30px solid #fff;
+      border-radius: 40px; }
+  .home-catalog-content-block {
+    width: 70%; }
+  .home-catalog-img-block {
+    width: 30%; }
+  .home-catalog-content {
+    padding: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .home-catalog-content p {
+      padding-right: 50px; }
+    .home-catalog-content .home-catalog-search select, .home-catalog-content .home-catalog-search input {
+      font-size: 0.8rem; }
+  .advantages-list {
+    flex-wrap: wrap; }
+    .advantages-list-card {
+      flex-basis: 100%;
+      margin-right: 0; }
+  .home-call-content {
+    padding: 110px 0%; }
+  footer .header-nav-list {
+    height: auto; }
+    footer .header-nav-list ul {
+      flex-direction: column;
+      visibility: visible;
+      opacity: 1; }
+  .sh-about-company-img {
+    width: 40%; }
+  .sh-about-logistics {
+    width: 60%;
+    padding-bottom: 100px; }
+  .sh-about .logistics-section-bg-block {
+    height: auto; }
+  .sh-about-legal, .sh-about-legal p {
+    font-size: 0.7rem; }
+  .sh-catalog-header-search {
+    width: 740px; }
+  .sh-catalog-header-search-data input, .sh-catalog-header-search-data select {
+    padding: 0px 5px; }
+  .sh-scroll {
+    overflow-x: auto; }
+    .sh-scroll .sh-catalog-table {
+      width: 900px; }
+  .sh-partners-list {
+    flex-direction: column; }
+    .sh-partners-list > * {
+      flex-basis: 100%;
+      width: 100%; }
+  .sh-partners .header-content {
+    padding: 0; }
+  .sh-contacts-block-insert {
+    padding: 50px; }
+  .sh-contacts-block-insert-top-name-phone {
+    margin-right: 0; }
+  .sh-contacts-block-insert-top {
+    flex-direction: column; }
+    .sh-contacts-block-insert-top > * {
+      flex-basis: 100%;
+      width: 100%; }
+      .sh-contacts-block-insert-top > * input {
+        width: 100%; }
+  .sh-contacts-block-data {
+    padding: 50px; } }
+
+/*--------------------------------- 576 - 768 -----------------------------------*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    width: 540px; }
+  .header {
+    height: auto; }
+    .header-content {
+      padding: 170px 0 100px 0; }
+  .home-about-us {
+    flex-wrap: wrap; }
+    .home-about-us-img {
+      width: 100%; }
+      .home-about-us-img-block {
+        border: 0; }
+    .home-about-us-content {
+      width: 100%;
+      margin-top: 40px; }
+      .home-about-us-content-box::before {
+        width: 100%;
+        margin-left: 0; }
+      .home-about-us-content-box p, .home-about-us-content-box .main-btn-block {
+        padding: 0 70px; }
+      .home-about-us-content-box p {
+        padding-top: 70px; }
+  .home-catalog-content-block {
+    width: 70%; }
+  .home-catalog-img-block {
+    width: 30%; }
+  .home-catalog-content {
+    padding: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .home-catalog-content p {
+      padding-right: 50px; }
+    .home-catalog-content .home-catalog-search {
+      flex-wrap: wrap; }
+      .home-catalog-content .home-catalog-search > * {
+        width: 100%; }
+  .advantages-list {
+    flex-wrap: wrap; }
+    .advantages-list-card {
+      flex-basis: 100%;
+      margin-right: 0; }
+  .home-call-content {
+    padding: 110px 0%; }
+    .home-call-content-request {
+      flex-direction: column;
+      align-items: center; }
+    .home-call-content-btn {
+      margin-top: 30px; }
+  footer .header-nav-list {
+    height: auto; }
+    footer .header-nav-list ul {
+      flex-direction: column;
+      visibility: visible;
+      opacity: 1; }
+  .sh-about-company {
+    flex-wrap: wrap; }
+    .sh-about-company > * {
+      flex-basis: 100%;
+      width: 100%; }
+    .sh-about-company-text {
+      margin-top: 30px; }
+  .sh-about-logistics {
+    width: 60%;
+    padding-bottom: 100px; }
+  .sh-about .logistics-section-bg-block {
+    height: auto; }
+  .sh-about-legal {
+    flex-direction: column;
+    justify-content: center; }
+    .sh-about-legal-sertificate img {
+      width: 100%; }
+    .sh-about-legal-requisites {
+      margin-top: 30px; }
+    .sh-about-legal-contacts {
+      margin-top: 30px; }
+  .sh-about-tesla-block p {
+    width: 80%; }
+  .sh-catalog-header-search {
+    width: 540px; }
+    .sh-catalog-header-search-data {
+      padding-right: 10px; }
+      .sh-catalog-header-search-data span.flaticon-arrow-1 {
+        display: none; }
+  .sh-catalog-header-search-data input, .sh-catalog-header-search-data select {
+    padding: 0px 5px;
+    font-size: 0.75rem; }
+  .sh-scroll {
+    overflow-x: auto; }
+    .sh-scroll .sh-catalog-table {
+      width: 900px; }
+  .sh-partners-list {
+    flex-direction: column; }
+    .sh-partners-list > * {
+      flex-basis: 100%;
+      width: 100%; }
+  .sh-contacts-block-insert {
+    padding: 50px; }
+  .sh-contacts-block-insert-top-name-phone {
+    margin-right: 0; }
+  .sh-contacts-block-insert-top {
+    flex-direction: column; }
+    .sh-contacts-block-insert-top > * {
+      flex-basis: 100%;
+      width: 100%; }
+      .sh-contacts-block-insert-top > * input {
+        width: 100%; }
+  .sh-contacts-block-data {
+    padding: 50px; }
+  .sh-contacts-block {
+    flex-direction: column; }
+    .sh-contacts-block > div:first-child {
+      border-radius: 0;
+      border-top-right-radius: 80px;
+      border-top-left-radius: 80px; }
+    .sh-contacts-block > div:last-child {
+      border-radius: 0;
+      border-bottom-right-radius: 80px;
+      border-bottom-left-radius: 80px; }
+    .sh-contacts-block > div {
+      width: 100%;
+      flex-basis: 100%;
+      box-sizing: border-box; } }
+
+/*--------------------------------- < 576 -----------------------------------*/
+@media (max-width: 576px) {
+  .container {
+    width: auto; }
+  .header {
+    height: auto; }
+    .header-content {
+      padding: 170px 0 100px 0; }
+  .home-about-us {
+    flex-wrap: wrap; }
+    .home-about-us-img {
+      width: 100%; }
+      .home-about-us-img-block {
+        border: 0; }
+    .home-about-us-content {
+      width: 100%;
+      margin-top: 30px; }
+      .home-about-us-content-box {
+        top: 20px; }
+        .home-about-us-content-box::before {
+          width: 100%;
+          margin-left: 0; }
+        .home-about-us-content-box p, .home-about-us-content-box .main-btn-block {
+          padding: 0 50px; }
+        .home-about-us-content-box p {
+          padding-top: 50px; }
+  .home-catalog-content-block {
+    width: 100%; }
+  .home-catalog-img-block {
+    width: 0%; }
+  .home-catalog-content {
+    padding: 40px; }
+    .home-catalog-content p {
+      padding-right: 0px; }
+    .home-catalog-content .home-catalog-search {
+      flex-wrap: wrap; }
+      .home-catalog-content .home-catalog-search > * {
+        width: 100%; }
+    .home-catalog-content .home-catalog-search select, .home-catalog-content .home-catalog-search input, .home-catalog-content .home-catalog-search button {
+      width: 90%;
+      margin-left: 5%; }
+    .home-catalog-content .home-catalog-search select, .home-catalog-content .home-catalog-search input {
+      font-size: 0.8rem; }
+  .advantages-list {
+    flex-wrap: wrap; }
+    .advantages-list-card {
+      flex-basis: 100%;
+      margin-right: 0;
+      padding: 40px 20px; }
+  .home-call-content {
+    padding: 110px 0%; }
+    .home-call-content-request {
+      flex-direction: column;
+      align-items: center; }
+      .home-call-content-request-leave-data div.d-flex {
+        flex-direction: column;
+        justify-content: center; }
+      .home-call-content-request .home-call-content-request-leave-data input {
+        margin-right: 0; }
+  .home-call-content h2 {
+    margin-right: 0;
+    text-align: center; }
+    .home-call-content h2-btn {
+      margin-top: 30px; }
+  .home-testimonials-slider-card {
+    padding: 30px 15px; }
+    .home-testimonials-slider-card h3 {
+      font-size: 1.3em; }
+  footer .footer-content {
+    flex-wrap: wrap;
+    justify-content: center; }
+    footer .footer-content > * {
+      flex-basis: 100%; }
+    footer .footer-content nav {
+      margin-top: 30px; }
+  footer .header-nav-list {
+    height: auto; }
+    footer .header-nav-list ul {
+      flex-direction: column;
+      visibility: visible;
+      opacity: 1; }
+  footer .footer-bottom {
+    flex-wrap: wrap;
+    flex-direction: row-reverse; }
+    footer .footer-bottom > * {
+      flex-basis: 100%; }
+  .sh-about-company {
+    flex-wrap: wrap; }
+    .sh-about-company > * {
+      flex-basis: 100%;
+      width: 100%; }
+    .sh-about-company-text {
+      margin-top: 30px; }
+  .sh-about-logistics {
+    width: 100%;
+    padding: 50px 15px;
+    box-sizing: border-box; }
+  .sh-about .logistics-section-bg-block {
+    height: auto; }
+  .sh-about .logistics-section-bg {
+    background: none; }
+  .sh-about-legal {
+    flex-direction: column;
+    justify-content: center; }
+    .sh-about-legal-sertificate img {
+      width: 100%; }
+    .sh-about-legal-requisites {
+      margin-top: 30px; }
+    .sh-about-legal-contacts {
+      margin-top: 30px; }
+  .sh-about-tesla-block p {
+    width: 100%; }
+  .sh-about-tesla-block .main-btn-block a {
+    padding: 15px 30px; }
+  .sh-catalog-header-search {
+    height: auto;
+    padding: 0;
+    padding-top: 20px;
+    border-radius: 25px;
+    width: 100%; }
+    .sh-catalog-header-search button {
+      width: 100%; }
+    .sh-catalog-header-search-data {
+      padding-right: 10px; }
+      .sh-catalog-header-search-data span.flaticon-arrow-1 {
+        display: none; }
+  .sh-catalog-header-search-data input, .sh-catalog-header-search-data select {
+    padding: 0px 5px;
+    text-align-last: center;
+    width: 80%;
+    font-size: 1rem;
+    border-right: none; }
+  .sh-catalog-header-search-data select {
+    margin-top: 30px; }
+  .sh-catalog-header-search-data-select-no-border {
+    margin-bottom: 30px; }
+  .sh-catalog-header-search form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+  .sh-catalog-header-search-data {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+  .sh-scroll {
+    overflow-x: auto; }
+    .sh-scroll .sh-catalog-table {
+      width: 900px; }
+  .sh-catalog-pagination-block-item {
+    margin-right: 10px;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem; }
+  .sh-partners-list {
+    flex-direction: column; }
+    .sh-partners-list > * {
+      flex-basis: 100%;
+      width: 100%; }
+  .sh-partners-list-item-extending-hidden-text {
+    padding: 0 0px; }
+  .sh-partners-list-item-top {
+    flex-direction: column;
+    align-items: flex-start; }
+    .sh-partners-list-item-top h3 {
+      margin-top: 15px; }
+  .sh-partners-list-item {
+    padding: 40px 20px; }
+    .sh-partners-list-item > p {
+      display: none; }
+    .sh-partners-list-item .sh-partners-list-item-extending {
+      position: relative; }
+      .sh-partners-list-item .sh-partners-list-item-extending-line {
+        display: none; }
+      .sh-partners-list-item .sh-partners-list-item-extending-hidden-text {
+        display: block;
+        position: relative;
+        opacity: 1; }
+  .sh-partners-list-item-top-logo {
+    width: auto; }
+    .sh-partners-list-item-top-logo img {
+      width: auto; }
+  .sh-partners-list-item-top {
+    margin-bottom: 15px; }
+  .sh-contacts-block-insert {
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .sh-contacts-block-insert-top-name-phone {
+    margin-right: 0; }
+  .sh-contacts-block-insert-top {
+    flex-direction: column; }
+    .sh-contacts-block-insert-top > * {
+      flex-basis: 100%;
+      width: 100%; }
+      .sh-contacts-block-insert-top > * input {
+        width: 100%; }
+  .sh-contacts-block-data {
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .sh-contacts-block {
+    flex-direction: column; }
+    .sh-contacts-block > div:first-child {
+      border-radius: 0;
+      border-top-right-radius: 40px;
+      border-top-left-radius: 40px; }
+    .sh-contacts-block > div:last-child {
+      border-radius: 0;
+      border-bottom-right-radius: 40px;
+      border-bottom-left-radius: 40px; }
+    .sh-contacts-block > div {
+      width: 100%;
+      flex-basis: 100%;
+      box-sizing: border-box; }
+  .sh-contacts-section > .container {
+    padding: 0; } }
+
+@media (max-width: 360px) {
+  .home-about-us-content-box::before {
+    border: 10px; }
+  .home-about-us-content-box p, .home-about-us-content-box .main-btn-block {
+    padding: 0 0px; }
+  .home-about-us-content-box p {
+    padding-top: 0px; } }
