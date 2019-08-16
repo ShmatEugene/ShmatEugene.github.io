@@ -44,6 +44,7 @@ $smallBorderR: 40px
       right: 10px
       color: $white
       &.d-none
+
         display: block
       span.hamburger-inner
         background-color: $white
@@ -91,6 +92,10 @@ $smallBorderR: 40px
           display: inline-block
           visibility: visible
           opacity: 1
+  .hamburger.is-active:hover, .hamburger:hover
+    opacity: 1
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+    height: 2px
 
 /*--------------------------------- <1500 -----------------------------------*/
 
@@ -443,6 +448,7 @@ $smallBorderR: 40px
       padding: 170px 0 100px 0
 
 
+
   .home-about-us
     flex-wrap: wrap
     &-img
@@ -461,6 +467,10 @@ $smallBorderR: 40px
           padding: 0 50px
         p
           padding-top: 50px
+    .home-about-us-img-block img
+      border-radius: 40px
+    .home-about-us-content-box::before
+      border-radius: 40px
 
   .home-catalog-content-block
     width: 100%
@@ -468,6 +478,12 @@ $smallBorderR: 40px
     width: 0%
   .home-catalog-content
     padding: 40px
+    .p-relative
+      position: relative
+      .flaticon-arrow-1
+        position: absolute
+        top: 45px
+        right: 0
     p
       padding-right: 0px
     .home-catalog-search select, .home-catalog-search input
@@ -476,10 +492,13 @@ $smallBorderR: 40px
       & > *
         width: 100%
     .home-catalog-search select, .home-catalog-search input, .home-catalog-search button
-      width: 90%
-      margin-left: 5%
+      width: 100%
+      margin-left: 0%
     .home-catalog-search select, .home-catalog-search input
       font-size: 0.8rem
+  .home-call-content-btn
+    margin-top: 30px
+
 
 
   .advantages-list
