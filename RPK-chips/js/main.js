@@ -1,3 +1,4 @@
+//home testimonials slider
 $('.home-testimonials-slider').slick({
   infinite: true,
   slidesToShow: 3,
@@ -18,7 +19,7 @@ $('.home-testimonials-slider').slick({
     },
   ]
 });
-
+//partners slider
 $('.home-partners-slider').slick({
   infinite: false,
   slidesToShow: 6,
@@ -53,6 +54,8 @@ $('.home-partners-slider').slick({
   ]
 });
 
+
+//partners page dropdown
 let itemHeight = $('.sh-partners-list-item').height();
 $( ".sh-partners-list-item-extending-btn" ).click(function() {
   let hiddenTextHeight = $(this).closest('.sh-partners-list-item-extending').children('.sh-partners-list-item-extending-hidden-text').height();
@@ -76,8 +79,28 @@ $( ".sh-partners-list-item-extending-btn" ).click(function() {
 
 });
 
-
+//mobile menu
 $('#header-nav-humburger').click(function() {
   $(this).toggleClass('is-active');
   $(this).closest('.header-nav').toggleClass('active')
+});
+
+
+
+//scroll animation
+$('.mask-animation').each(function() {
+    var $this = $(this);
+    if($this.attr('data-anim-delay')) {
+    var animDelay = Number($this.attr('data-anim-delay'));
+  } else {
+    animDelay = 2500;
+  }
+    setTimeout(function() {
+        $this.appear(function() {
+          $this.addClass('mask-animation-applied');
+        });
+        if($this.hasClass('mask-animation-opacity')) {
+          $this.addClass('mask-animation-opacity-07')
+        }
+    }, animDelay);
 });

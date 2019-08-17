@@ -150,6 +150,19 @@ p {
     text-align: center;
     margin-top: 30px; }
 
+/*Scroll animation*/
+.mask-animation {
+  opacity: 0 !important;
+  position: relative;
+  top: 50px; }
+
+.mask-animation-applied {
+  opacity: 1 !important;
+  top: 0px; }
+
+.mask-animation.mask-animation-opacity-07 {
+  opacity: 0.7 !important; }
+
 /*--------------------Margins--------------------*/
 .sh-mt-10 {
   margin-top: 10px; }
@@ -373,6 +386,13 @@ input, textarea, button, select, a {
   -ms-transition: all 0.5s cubic-bezier(0.4, 0.26, 0, 0.97);
   -o-transition: all 0.5s cubic-bezier(0.4, 0.26, 0, 0.97);
   transition: all 0.5s cubic-bezier(0.4, 0.26, 0, 0.97); }
+
+.mask-animation {
+  -webkit-transition: all 0.9s ease-out;
+  -moz-transition: all 0.9s ease-out;
+  -ms-transition: all 0.9s ease-out;
+  -o-transition: all 0.9s ease-out;
+  transition: all 0.9s ease-out; }
 
 .main-btn, .main-btn:after, .rpk-form-btn, .rpk-form-btn:after, .header-nav, .header-nav.active .header-nav-list ul, .header-nav-call-us, .header-nav.active .header-nav-call-us div, .advantages-list-card, .home-testimonials-slider-card, .sh-catalog-header-search button:after, .sh-catalog-table-cell-btn, .sh-partners-list-item, .sh-partners-list-item-extending-line, .sh-partners-list-item-extending-btn:before, .sh-partners-list-item-extending-btn:after {
   -webkit-transition: all 0.3s cubic-bezier(0.4, 0.26, 0, 0.97);

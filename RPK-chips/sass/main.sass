@@ -158,6 +158,19 @@ p
         text-align: center
         margin-top: 30px
 
+/*Scroll animation*/
+.mask-animation
+  opacity: 0 !important
+  @extend %sh-trans-09
+  position: relative
+  top: 50px
+
+.mask-animation-applied
+  opacity: 1 !important
+  top: 0px
+.mask-animation.mask-animation-opacity-07
+  opacity: 0.7 !important
+
 /*--------------------Margins--------------------*/
 .sh-mt-10
   margin-top: 10px
@@ -371,6 +384,13 @@ input, textarea, button, select, a
     -ms-transition: all 0.5s cubic-bezier(.4,.26,0,.97)
     -o-transition: all 0.5s cubic-bezier(.4,.26,0,.97)
     transition: all 0.5s cubic-bezier(.4,.26,0,.97)
+
+%sh-trans-09
+    -webkit-transition: all 0.9s ease-out
+    -moz-transition: all 0.9s ease-out
+    -ms-transition: all 0.9s ease-out
+    -o-transition: all 0.9s ease-out
+    transition: all 0.9s ease-out
 
 %sh-trans-03
     -webkit-transition: all 0.3s cubic-bezier(.4,.26,0,.97)
